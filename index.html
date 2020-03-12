@@ -1,14 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/about.html">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <section class="intro">
+            <!-- <h1>김지민입니다.</h1> -->
+            <p>안녕하세요, <br>
+                20살 어린 나이에 또래보다 먼저 사회에 뛰어들어 <br>
+                개발하고 있는 2년차 개발자 김지민입니다.<br>
+            </p>
 
+            <p>새로운 기술에 흥미를 느끼며, 도전을 두려워하지 않습니다. <br>
+                혼자보단 함께 성장하는 것이 더 가치있는 일이라 생각하고<br>
+                수평적인 조직 문화을 지향합니다.</p>
+        </section>
+        <section class="work_experience">
+            <h2>개발 경험</h2>
+            <div class="corp">
+                <div class="left">
+                    <h3>디토닉 주식회사</h3>
+                    <span>데이터 엔지니어</span>
+                    <span>2019.01 - 재직중</span>
+                </div>
+                <div class="right">
+                    <div class="project">
+                        <h3>운수 안전 컨설팅 지원 시스템 3차 고도화</h3>
+                        <span class="time">2019.12 - 2020.03</span>
+                        <h5>간단 설명</h5>
+                        <p>한국교통안전공단에서 사용하는 <a target="_blank" href="http://ts.newsnstory.com/pages/story/WB/cont?menuId=30000&menuNm=Culture%20&wzVol=1&rawid=36232">COSAS</a>(운수 안전 컨설팅 지원 시스템)의 빅데이터 파트에서 클러스터 확장 및 시스템 고도화 진행했습니다.</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li>기존 빅데이터 클러스터(HDP Cluster) 안정화 및 고도화</li>
+                            <li>사업용 차량의 운행 기록 데이터(시공간 데이터) 처리 프로세스 개발</li>
+                            <li>위험운전행동 및 이상운전행동 데이터 판별 프로세스 개발</li>
+                            <li>위험 운전 데이터 시공간 맵핑</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>Scala, Spark, HBase, HDFS, BigData, HDP, MongoDB, PostgreSQL</p>
+                    </div>
+                    <div class="project">
+                        <h3>드론 데이터의 실시간 처리를 위한 “ElasticStack” 기술 적용 및 성능 시험</h3>
+                        <span class="time">2019.11</span>
+                        <h5>간단 설명</h5>
+                        <p>항공우주연구원에서 드론 데이터에 관한 정보를 관리하는 ETL 시스템으로 ElasticSearch가 적합한지에 대한 연구 진행</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li><b>E</b>(Elastic) <b>L</b>(Logstash) <b>K</b>(Kibana) 시스템 구축</li>
+                            <li>Logstash HTTP를 사용하여 ElasticSearch에 데이터 적재하는 파이프라인 구축</li>
+                            <li>드론 데이터 Throughput 테스트를 위한 데이터 슈터 개발</li>
+                            <li>5기 서버로 ElasticSearch Cluster 구성 및 드론 데이터 Throughput 테스트</li>
+                            <li>ElasticSearch 적재된 드론 데이터 시공간 검색 테스트</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>ElasticSearch, Logstash, Kibana, Python</p>
+                    </div>
+                    <div class="project">
+                        <h3>드론 영상 빅데이터 실시간 처리 시스템 데이터 모델링 및 자료구축</h3>
+                        <span class="time">2019.08 - 2019.10</span>
+                        <h5>간단 설명</h5>
+                        <p>항공우주연구원 인공지능연구실에서 사용하는 드론의 데이터를 실시간/배치 처리를 위한 오픈소스 기반의 빅데이터 시스템 설계 및 성능 측정을 진행했습니다.</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li>드론 영상 데이터을 빅데이터 기반의 클러스터에 적재하는 수집 프로세스 개발</li>
+                            <li>빅데이터 클러스터에 적재된 드론 영상 스트리밍하는 시스템 구축</li>
+                            <li>실시간 드론 영상을 딥러닝 기반의 사물 인식하는 프로세스 개발</li>
+                            <li>실시간으로 인식된 사물을 영상 스트리밍과 함께 시각화는 프로세스 개발</li>
+                            <li>빅데이터 시스템 기반의 동영상 스트리밍에 대한 논문 게재 및 항공우주학회 2019 추계학술대회에서 발표</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>Kafka, Python, RED5, Pytorch, YOLO V3, FFmpeg, HDFS, Nginx</p>
+                    </div>
+                    <div class="project">
+                        <h3>자율주행차량용 멀티채널V2X통신 데이터 처리 엔진 기술 개발 과제</h3>
+                        <span class="time">2019.04 - 2019.07</span>
+                        <h5>간단 설명</h5>
+                        <p>자율주행차량용 멀티 채널 V2X 통신 데이터를 처리하는 기술 개발하는 과제(국가 R&D)를 진행했습니다.</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li>데이터 슈터(ROS 시스템에서 빅데이터 클러스터로 V2X 데이터를 전달하는 소프트웨어) 개발</li>
+                            <li>빅데이터 시스템에 전달되는 V2X 데이터 수집하는 수집기(Kafka) 구축</li>
+                            <li>수집된 V2X 데이터 실시간으로 시공간 인덱싱(Geomesa)하여 저장소(HBase)에 적재</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>Scala, Python, ROS, Spark, Geomesa, HBase, Kafka</p>
+                    </div>
+                    <div class="project">
+                        <h3>사내 PMS & LDAP 시스템 구축</h3>
+                        <span class="time">2019.03</span>
+                        <h5>간단 설명</h5>
+                        <p>기존 사내 PMS와 LDAP 시스템이 상면서버에 구축되어 있는 것을 클라우드로 이전하고 PMS를 Phabricator로 교채하여 시스템을 구착하는 작업을 진행했습니다.</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li>기존 LDAP 클라우드로 마이그레이션</li>
+                            <li>Phabricator CentOS에 구축</li>
+                            <li>Phabricator 칸반보드 커스터마이징 개발</li>
+                            <li>기존 GitLab 레포지토리 Phbaricator Diffusion으로 마이그레이션</li>
+                            <li>Apache 서버로 도메인별로 서비스 라우팅 작업</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>LDAP, Git, Apache CentOS, Phabricator, PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="corp">
+                <div class="left">
+                    <h3>일마일 주식회사</h3>
+                    <span>학습근로자</span>
+                    <span>2017.03 - 2018.12</span>
+                </div>
+                <div class="right">
+                    <div class="project">
+                        <h3>알리오 서비스 개발</h3>
+                        <span class="time">2018.08 - 2018.12</span>
+                        <h5>간단 설명</h5>
+                        <p>1년간 학습근로자로 근무하며 학습한 기술을 기반으로 모바일페이지 기반의 고객 마케팅 툴인 <a target="_blank" href="https://alrio.ilmile.com">알리오</a>  서비스의 프론트엔드와 백엔드의 유지보수 및 신규 기능을 개발했습니다.</p>
+                        <h5>주요 업무</h5>
+                        <ul>
+                            <li>알리오 스케줄러(고객사 홍보 통계 소프트웨어) 개발</li>
+                            <li>알리오 스케줄러 UI 개발</li>
+                        </ul>
+                        <h5>사용 기술</h5>
+                        <p>Angular, Spring, TypeScript, Java, PostgreSQL, MeterialUI, Apache Tomcat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="other_experiences">
+            <h2>이외 경험</h2>
+            <div class="experiences">
+                <h3>빅 데이터 기반 드론 동영상 스트리밍 기법</h3>
+                <span>항공우주학회 2019 추계학술대회</span>
+                <span class="time">2019.11</span>
+                <p>항공우주연구원에서 진행하는 과제를 수행하면서 항공우주학회 학술대회에 참가할 수 있는 기회가 생겨 `빅 데이터 기반 드론 동영상 스트리밍 기법`으로 논문을 발표했습니다</p>
+            </div>
+            <div class="experiences">
+                <h3>군사 교육 소집</h3>
+                <span>산업기능요원</span>
+                <span class="time">2019. 08</span>
+                <p>논산으로 4주간 군사 교육 소집을 수료했습니다. (<del>8월 논산은 정말 더웠습니다.</del>)</p>
+            </div>
+            <div class="experiences">
+                <h3>대림대학교</h3>
+                <span>융합소프트웨어 학과</span>
+                <span class="time">2019. 03 - 2020.02 (중퇴)</span>
+                <p>고등학교 도제학교를 대학교까지 연장하여 일학습병행제를 선택했으며, 회사를 다니면서 주말에 대학에서 전공을 공부했습니다. 하지만 더 좋은 학교로 가기 위해 자퇴를 선택했습니다.</p>
+            </div>
+            <div class="experiences">
+                <h3>하이톤 - 쇼미더코딩</h3>
+                <span>기발한 발상 (창의상)</span>
+                <span class="time">2017. 11</span>
+                <p>고등학생들만 참가할 수 있는 해커톤에서 `트럼프`라는 주제로 개발을 진행했으며, 
+                미 대통령인 트럼프 대통령의 트위터로 긍정과 부정을 판단하는 프로그램을 개발하고 그 결과를 화면에 재치있게 표현하여
+                `기발한 발상`을 입상했습니다.
+            </p>
+            </div>
+            <div class="experiences">
+                <h3>스마틴 앱 챌린지</h3>
+                <span>인공지능(누구) 분야 장려상</span>
+                <span class="time">2017.04 - 2017.12</span>
+                <p>팀원 4명을 이끌어 함께 SK NUGU를 활용한 <a target="_black" href="https://github.com/jjjjjimmy/TourCoach">서비스</a>를 약 8개월간 개발하여 공모전에 참가했습니다. 아쉽게 결승에서 장려상에 그쳤습니다.</p>
+            </div>
+            <div class="experiences">
+                <h3>지방기능경기대회</h3>
+                <span>웹디자인 및 개발 분야 7위</span>
+                <span class="time">2017.04</span>
+                <p>1년에 한번 열리는 지방기능경기대회 웹디자인 및 개발 분야에 학교를 대표해 출전하였으나, 아쉽게 입상은 못했습니다.</p>
+            </div>
+            <div class="experiences">
+                <h3>양영디지털고등학교</h3>
+                <span>소프트웨어개발 학과</span>
+                <span class="time">2016. 03 - 2019. 01</span>
+                <p><a target="_blank" href="https://www.y-y.hs.kr/doc.view?mcode=111210&cate=111210">소프트웨어개발 학과</a>에서 3년간 자료구조, 객체지향 프로그래밍, 데이터베이스, 앱 개발, 응용 프로그램 개발 등의 NCS 기반의 전공 교육과정을 이수했으며, 
+                    2학년부터 도제학교를 통해 기업에서 학습근로자로 근무했습니다. </p>
+            </div>
+            <div class="experiences">
+                <h3>양영디지털고등학교 기능경기대회 준비반</h3>
+                <span>소프트웨어개발 학과</span>
+                <span class="time">2016. 01 - 2018. 08</span>
+                <p>고등학교 입학전 기능경기대회(웹 디자인 및 개발분야)에 입단하여 총 1년 7개월간 선수 생활을 했으며, 웹 개발 및 퍼블리싱에 대한 기술을 학습했습니다.</p>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>나의 스킬</h2>
+            <div class="skill">
+                <h3>빅데이터 엔지니어링</h3>
+                <ul>
+                    <li>대용량의 데이터의 수집/적재/처리 경험이 있습니다.</li>
+                    <li>하둡 기반의 에코시스템을 구축할 수 있습니다.</li>
+                    <li>10기 이상의 빅데이터 클러스터 구축 및 운영 경험이 있습니다.</li>
+                    <li>Spark, Scala를 사용한 데이터 처리 가능합니다</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>웹 개발</h3>
+                <ul>
+                    <li>Spring, Laravel, Flask 등을 사용하여 백엔드 개발 가능합니다.</li>
+                    <li>Vue, Angaulr를 사용하여 프론트엔드 개발 가능합니다</li>
+                    <li>HTML/CSS를 사용하여 퍼블리싱을 가능합니다.</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>서버 엔지니어링</h3>
+                <ul>
+                    <li>Nginx, Apache등을 사용하여 서버를 구성 가능합니다.</li>
+                    <li>Shell Script를 사용한 프로세스 개발 가능합니다.</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>감사합니다. 오늘 하루 행복하세요</p>
+            <a target="_black" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+            <a target="_black" href="mailto:jimmy.work.kr@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a target="_black" href="https://github.com/jjjjjimmy"><i class="fab fa-github-square"></i></a>
+        </footer>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/a9f8459589.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script>
+        window.onload = function(){
+            var app = new App()
+            app.init()
+        }
+    </script>
 </body>
 </html>

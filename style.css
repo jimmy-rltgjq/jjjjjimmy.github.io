@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #232323;
+}
+a{
+    color: #0748E5;
+}
+
+/* Global Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+/* Global Section */
+section {
+    width: 100%;
+    height: auto;
+    float: left;
+    
+}
+
+
+/* Global Section Content */
+section > div {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+section > div::before{
+    content:'';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.1s;
+}
+
+/* Section Content Hover Event */
+section > div:hover::before {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+
+/* Global time */
+.time {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    margin: 4rem 0 2rem;
+    font-size: 3rem;
+}
+section h3 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+section h5 {
+    font-size: 1.3rem;
+    margin: 0 0 .5rem;
+    color: #333;
+}
+
+/* Main Intro */
+.intro > h1{
+    font-size: 5rem;
+    margin: 0;
+}
+.intro > p {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Work Experience */
+
+
+
+.work_experience > .corp > div{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.work_experience .left > span {
+    display: block;
+}
+.work_experience .right > .project{
+    padding-bottom: 2.0rem;
+}
+.work_experience .right > .project > span {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.work_experience .right > .project > p {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+
+.other_experiences > .experiences {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;    
+}
+.other_experiences > .experiences > p  {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+}
+footer i{
+    display: inline-block;
+    margin: 0 0.1rem;
+}
+
+footer a{
+    color: #333;
+}
